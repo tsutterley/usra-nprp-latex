@@ -1,7 +1,7 @@
 usra-nprp-latex
 ================
 
-#### A LaTeX template for fellowship applications for the NASA Postdoctoral Program (NPP).  
+#### A LaTeX template for fellowship applications for the NASA Postdoctoral Research Program (NPRP).  
 
 - [How to Apply](https://npp.usra.edu/apply/)  
 - [Research Opportunities](https://npp.usra.edu/opportunities/)  

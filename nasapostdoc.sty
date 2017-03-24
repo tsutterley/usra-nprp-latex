@@ -1,14 +1,21 @@
 % Package defines typesetting for NASA Postdoctoral Program Proposals
 \ProvidesPackage{nasapostdoc}[2016/10/20 v.01]
-\usepackage[hmargin={1in,1in},vmargin={1in,1in}]{geometry}
-\usepackage{indentfirst}
-\usepackage{setspace}
-\usepackage{titlesec}
-\usepackage{abstract}
-\usepackage{caption}
+\PassOptionsToPackage{hmargin={1in,1in},vmargin={1in,1in}}{geometry}
+\RequirePackage{geometry}
+\RequirePackage{indentfirst}
+\RequirePackage{setspace}
+\RequirePackage{titlesec}
+\RequirePackage{abstract}
+\RequirePackage{caption}
 
 %-- Caption label with bold font
 \captionsetup{labelfont=bf}
+
+%-- Declare options and use default options
+\newif\ifnpmp
+\DeclareOption{npmp}{\global\npmptrue}
+\ExecuteOptions{}
+\ProcessOptions
 
 %-- section and subsection formats
 \renewcommand{\abstractnamefont}{\fontsize{14}{14}\selectfont\bfseries}
@@ -33,6 +40,9 @@
 \begingroup  
   {\centering\fontsize{16}{16}\selectfont\bfseries \@title\\[0.75ex]}
   {\centering\fontsize{14}{14}\selectfont \@author\\[0.75ex]}
+  \ifnpmp
+    {\centering\textbf{An Application to the NASA Postdoctoral Management Program\\[0.75ex]}}
+  \fi  
   \noindent\textbf{Title of Research Opportunity}: \@project\par
   \noindent\textbf{NASA Center}: \@institution\par
   \noindent\textbf{NASA Advisor}: \@advisor\par
