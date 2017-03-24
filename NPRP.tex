@@ -1,0 +1,77 @@
+% After selecting your Research Opportunity to which you want to apply, contact the NASA Advisor or Point of Contact associated with that opportunity to discuss your research plan.
+% Develop your research plan in collaboration with the prospective NASA Advisor
+% You must submit a research proposal that responds to the goals and objectives described in the research opportunity you selected.
+% Your proposal will be reviewed by the Center to assess its suitability for the research opportunity and, if suitable, will be reviewed by at least three external peer reviewers.
+%
+% Format of the Proposal
+% The maximum length for the proposal is 15 pages, including figures and citations; double-spaced; 12-point font.
+% Proposals for the NASA Postdoctoral Research Program should begin with a brief abstract, followed by the body of the proposal, which should contain these components:
+%%% statement of problem,
+%%% background and relevance to previous work,
+%%% general methodology, procedures to be followed, and timeline for completion of each step;
+%%% explanation of new or unusual techniques,
+%%% expected results and their significance and application, and
+%%% literature citations, where appropriate.
+
+\documentclass[final,letterpaper,oneside,12pt]{article}
+\usepackage{nasapostdoc}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[plainpages=false,colorlinks=true,urlcolor=black,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
+\usepackage{cleveref}
+\usepackage{natbib}
+
+\title{Replace this with Your Title}  % add title here
+\author{Your Name Goes Here}  % include Author's name here
+
+%%% Uncomment the lines below and replace the text with your information
+%\project{Replace this with the selected opportunity title from the USRA website} 
+%\institution{Replace this with the prospective NASA center}  
+%\advisor{Replace this with the advisor of the selected opportunity} 
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+	Replace this text with the text of your abstract.
+\end{abstract}
+
+\section{Statement of the Problem}
+
+This is an example using the \LaTeX{} template for the NASA Postdoctoral Program.  Please replace this text with the text of your research proposal. Remember that the text of the proposal needs to be double-spaced.
+
+The \href{http://merkel.texture.rocks/Latex/natbib.php}{natbib} package provides multiple citation options as described in \citet{natbib:2010}.
+
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[trim = 0mm 0mm 0mm 0mm, clip, width=1in]{example-image-a}
+   \caption{example caption}
+   \label{fig:example}
+\end{figure}
+
+\section{Science Background}
+
+\section{Objectives and Expected Significance}
+
+\section{General Methodology}
+
+\section{Explanation of New Techniques}
+
+\section{Perceived Impact to State of Knowledge}
+
+\section{Work Plan}
+
+%%% Include literature citations where necessary and appropriate.
+%%% You should use an accepted citation format relevant for your field
+%%% Citations can be single-spaced, but should use a 12 point font.
+\newpage
+\singlespacing
+\setlength{\bibsep}{0ex}
+\bibliographystyle{abbrvnat}
+\bibliography{nasa-bib-nprp}
+
+\end{document}  
+%%% Local Variables: ***
+%%% mode: latex ***
+%%% TeX-master: "NPRP.tex" ***
+%%% End: ***
